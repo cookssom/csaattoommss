@@ -28,8 +28,8 @@ $(document).ready(function() {
         if (vars) {
                 $("input[name=brandcode]").val(vars.code);
                 $("input[name=branduid]").val(vars.id);
-		$("input[id=size]").val(vars.size);
-		$("input[id=index]").val(vars.index);
+				$("input[id=size]").val(vars.size);
+				$("input[id=index]").val(vars.index);
                 $('#form').attr('action', 'http://www.atmos-seoul.com/shop/basket.html');
                 //$('#form').submit();
         }
@@ -41,18 +41,17 @@ $(document).ready(function() {
 <center><h1>ATMOS KR Carting...for CookSSOM</h1></center>
 
 <form name="form" id="form" action="http://www.atmos-seoul.com/shop/basket.html" method="post">
-		<input hidden name="xcode" value="003">
-		<input hidden name="mcode" value="001">
-		<input hidden name="typep" value="Y">
-        	<input hidden name="ordertype" value="">
-        	<input hidden name="brandcode" value="">
-		<input hidden name="branduid" value="">
-        	<input hidden name="opt_type" value="PS">
-		<input hidden name="option[basic][0][0][opt_id]" value="1">
-		<input hidden id="size" name="option[basic][0][0][opt_value]" value="">
-		<input hidden name="option[basic][0][0][opt_stock]" value="1">
-		<input hidden id="index" name="option[basic][0][0][sto_id]" value="">
-		<input hidden id="amount[]" value="1">
+		<input   name="xcode" value="003">
+		<input  name="mcode" value="001">
+		<input  name="typep" value="Y">
+        <input  name="ordertype" value="baro|parent.|layer">
+        <input  name="brandcode" value="">
+		<input  name="branduid" value="">
+        <input  name="opt_type" value="PS">
+		<input  name="option[basic][0][0][opt_id]" value="1">
+		<input  id="size" name="option[basic][0][0][opt_value]" value="">
+		<input  name="option[basic][0][0][opt_stock]" value="1">
+		<input  id="index" name="option[basic][0][0][sto_id]" value="">
 		<!--<input  name="_multi_ea[]" value="1">
 		<input  name="multi_ea[]" value="1">
 		<input  name="multi_ea[0][]" value="235">
