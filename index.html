@@ -19,11 +19,7 @@ $(document).ready(function() {
 
         vars = getUrlVars()
 
-        if (vars.region) {
-            region = vars.region
-        } else {
-            region = "GB"
-        }
+
 
         if (vars) {
                 $("input[name=brandcode]").val(vars.code);
